@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
 <meta charset="UTF-8">
 <title>Votação</title>
- <link rel="stylesheet" href="Estilizacao/style2.css">
+ <link rel="stylesheet" href="Estilizacao/style.css">
 </head>
 <body>
 

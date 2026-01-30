@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Resultado da Votação</title>
-<link rel="stylesheet" href="Estilizacao/style2.css">
+<link rel="stylesheet" href="Estilizacao/style.css">
 
 </head>
 <body>
