@@ -51,10 +51,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <form method="post">
     <h2>Cadastre o candidato </h2>
 
-    <input type="text" name="nome" placeholder="Digite o nome do candidato"><br>
+    <input type="text" name="nome" class="campo" placeholder="Digite o nome do candidato"><br>
 
      <!-- SELECT TURMA -->
-    <select name="turma" id="turma">
+    <select name="turma" id="turma" class="campo" >
         <option value="">Selecione a turma</option>
         <option value="Manhã">Manhã</option>
         <option value="Tarde">Tarde</option>
@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <br>
 
     <!-- SELECT DO CURSO -->
-     <select name="curso" id="curso">
+     <select name="curso" id="curso" class="campo" >
         <option value="">Selecione o curso</option>
         <option value="backEnd">Back End</option>
         <option value="designerGrafico">Designer Gráfico</option>

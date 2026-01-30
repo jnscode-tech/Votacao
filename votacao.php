@@ -51,9 +51,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <h2> Sistema de Votação</h2>
 
   <!-- Campo para digitar o CPF -->
-<input type="number" name="cpf" placeholder="XXX.XXX.XXX-XX" maxlength="11" pattern="\d{3}[\.]?\d{3}[\.]?\d{3}[-]?\d{2}" required>
+<input type="text" name="cpf" class="campo" placeholder="XXX.XXX.XXX-XX" maxlength="11" pattern="\d{3}[\.]?\d{3}[\.]?\d{3}[-]?\d{2}" required>
 
-    <select name="candidato">
+    <select name="candidato" class="campo">
         <option value="">Escolha o candidato</option>
         <?php
         if (file_exists($arquivoCandidatos)) {
