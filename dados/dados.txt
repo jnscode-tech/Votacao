@@ -1,7 +1,8 @@
-ID: 1 | Nome: Camila Mendes | Turma: Noite | Curso: backEnd
-ID: 2 | Nome: Juliana Nascimento | Turma: Noite | Curso: backEnd
-ID: 3 | Nome: Danilo  | Turma: Noite | Curso: backEnd
-ID: 4 | Nome: Alexandre | Turma: Noite | Curso: backEnd
-ID: 5 | Nome: Francielly | Turma: Noite | Curso: backEnd
-ID: 6 | Nome: Douglas | Turma: Noite | Curso: backEnd
-ID: 7 | Nome: Matheus Guida | Turma: Noite | Curso: backEnd
+1| Alexandre Galacho|Noite|backEnd
+2| Camila Mendes|Noite|backEnd
+3| Danilo Remonti|Noite|backEnd
+4| Douglas Castro|Noite|backEnd
+5| Francielly de Melo|Noite|backEnd
+6| Juliana Nascimento|Noite|backEnd
+7| Matheus Guida|Noite|backEnd
+8| Izadora Bruna|Noite|backEnd

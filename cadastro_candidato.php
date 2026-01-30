@@ -1,10 +1,11 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-// Pegar os dados nome, turma e curso do candidato
-    $nome  = $_POST["nome"];
-    $turma = $_POST["turma"];
-    $curso = $_POST["curso"];
+// Recebe os dados do formulário e remove espaços extras
+//O trim() remove espaços em branco desnecessários do início e do fim de uma string.
+    $nome  = trim($_POST["nome"]);
+    $turma = trim($_POST["turma"]);
+    $curso = trim($_POST["curso"]);
 
 // O if verifica se os campos: nome, turma e curso estão vazios, caso esteja ele dá mensagem e não permite salvar dados
 
@@ -12,30 +13,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // variavel dadosCandidatos, armazena as informações no dados.txt
 
-        // Foi criado uma pasta chamada Dados pois não estava funcionando jogar o arquivo dados.txt direto no diretório. 
-        //Foi necessário dar permissão de ecrita e leitura na pasta para que o arquivo txt fosse criado  
-        $dadosCandidatos = __DIR__ . "/Dados/dados.txt";
+//Foi necessário dar permissão de ecrita e leitura na pasta para que o arquivo txt fosse criado  
+//   Caminho do arquivo de candidatos
+        $dadosCandidatos = __DIR__ . "/dados/dados.txt";
 
-
+// Se o arquivo existir, lê as linhas; senão, cria um array vazio
 // GERA ID SEQUENCIAL  - 1,2, 3....
         if (file_exists($dadosCandidatos)) {
             $linhas = file($dadosCandidatos, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+
+// Gera ID sequencial baseado na quantidade de linhas
             $id = count($linhas) + 1;
         } else {
             $id = 1;
         }
 //a forma como os dados serão armazenados no bloco de notas: ID: 1 | Nome: Juliana | Turma: Noite | Curso: ADS
-        $linha = "ID: $id | Nome: $nome | Turma: $turma | Curso: $curso" . PHP_EOL;
+        $linha = "$id| $nome|$turma|$curso" . PHP_EOL;
 
-// Essa linha armazena os dados que o usuário digitou nas caixas de texto
+// Essa linha armazena os dados que o usuário digitou nas caixas de texto no bloco de notas
         if (file_put_contents($dadosCandidatos, $linha, FILE_APPEND | LOCK_EX)) {
-            $mensagem = "Dados salvos com sucesso! (ID: $id)";
-        } else {
-            $mensagem = "Erro ao gravar o arquivo.";
-        }
 
+ //Mensagem para o usuario - na cor azul (span style=color blue)       
+            $mensagem = "<span style='color: blue;'>Dados salvos com sucesso! </span> (ID: $id)";
+        } else {
+ //Mensagem para o usuario - na cor vermelha (span style=color blue)   
+            $mensagem = "<span style='color: red;'> Erro ao gravar o arquivo. </span>";
+        }
     } else {
-        $mensagem = "Preencha todos os campos.";
+ //Mensagem para o usuario - na cor verde (span style=color blue)   
+        $mensagem = "<span style='color: green;'>Preencha todos os campos.</span>";
     }
 }
 ?>
@@ -45,6 +51,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <title>Cadastro</title>
     <link rel="stylesheet" href="Estilizacao/style2.css">
+      <!-- comando abaixo serve para colocar ícone no título -->
+    <link rel="icon" type="image/png" href="Images/icon2.png">
+ 
+
 </head>
 <body>
 
@@ -72,6 +82,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <option value="jogosDigitais">Jogos Digitais</option>
      </select>
 
+      <!--  ÁREA DOS BOTÕES – Para Salvar tem que utilizar o submit, 
+      já para voltar pra HOME usa o button pois ele não terá uma ação (get/post) e tá vinculado ao 
+      link que retorna para página incial -->
 
     <button type="submit"> <strong>SALVAR </strong></button>
     

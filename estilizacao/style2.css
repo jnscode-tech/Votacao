@@ -6,41 +6,41 @@ body{
     align-items: center;
     height: 100vh;
 }
-
+ 
 /* 🔹 Container principal */
 .resultado-container{
     display: flex;
     flex-direction: column; /* 🔥 força ordem vertical */
     align-items: center;
 }
-
+ 
 /* 🔹 Título */
 .resultado-container h1{
     color: #0b1fa6;
     font-size: 40px;
     margin-bottom: 20px;
 }
-
+ 
 /* 🔹 Tabela */
 table{
     width: 520px;
     border-collapse: collapse;
     margin-bottom: 25px; /* espaço antes do botão */
 }
-
+ 
 th, td{
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
 }
-
+ 
 th{
     background-color: #f2f2f2;
     font-size: 18px;
 }
-
-
-
+ 
+ 
+ 
 form{
             background: white;
             padding: 30px;
@@ -60,7 +60,7 @@ button{
             border: none;
             cursor: pointer;
             border-radius: 6px;
-
+ 
         }
 p{
             margin-top: 15px;
@@ -78,13 +78,13 @@ h2{
             cursor: pointer;
             border-radius: 6px;
         }
-
+ 
 .inicio-resultado{
             background: orange;
             color: white;
             border: none;
             cursor: pointer;
-            width: 170px;
+            width: 100%;
             border-radius: 6px;
-
+ 
 }
