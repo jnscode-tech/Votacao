@@ -12,22 +12,22 @@
 <div class="container">
  
 <div class="imagem">
-<img src="Images/voto1.jpeg" alt="urna"> 
+<img src="Images/voto1.jpg" alt="urna"> 
 
 </div>
 
     <div class="botoes">
   
     <a href="cadastro_candidato.php">
-        <button class="cadastro"><strong>Cadastrar Candidatos</strong></button>
+        <button class="cadastro"><strong>CADASTRAR CANDIDATO</strong></button>
     </a>
 
     <a href="votacao.php">
-        <button class="votacao"><strong>Votação</strong></button>
+        <button class="votacao"><strong>VOTAÇÃO</strong></button>
     </a>
 
     <a href="resultado.php">
-        <button class="resultado"> <strong> Resultado </strong></button>
+        <button class="resultado"> <strong> RESULTADO </strong></button>
     </a>
    </div>
 

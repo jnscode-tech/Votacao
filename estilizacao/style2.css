@@ -48,11 +48,12 @@ form{
             width: 380px;
         }
 input, button, select{
-            width: 97%;
-            padding: 9px;
-            margin-top: 10px;
-            color: #00008B;
+            width: 100%;
+            padding: 12px;
             font-size: 16px;
+            box-sizing: border-box;
+            border-radius: 6px;
+            margin-top: 10px;
         }
 button{
             background:  #4169E1;
@@ -77,6 +78,7 @@ h2{
             border: none;
             cursor: pointer;
             border-radius: 6px;
+
         }
  
 .inicio-resultado{
@@ -84,7 +86,6 @@ h2{
             color: white;
             border: none;
             cursor: pointer;
-            width: 100%;
             border-radius: 6px;
  
 }

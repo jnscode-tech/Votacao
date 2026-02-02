@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 
 <form method="post">
-    <h2>Cadastre o candidato </h2>
+    <h2>Cadastre o Candidato </h2>
 
     <input type="text" name="nome" placeholder="Digite o nome do candidato"><br>
 

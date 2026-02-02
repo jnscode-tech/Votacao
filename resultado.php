@@ -102,7 +102,7 @@ if (!file_exists($arquivoVotos) || !file_exists($arquivoCandidatos)) {
 <div class="resultado-container">
 
     <!-- Título principal -->
-    <h1>Resultado final</h1>
+    <h1>Resultado Final</h1>
 
     <!-- Se existir mensagem, exibe alerta -->
     <?php if (isset($mensagem)): ?>
